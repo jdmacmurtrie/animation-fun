@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap");
+
+.H {
+  animation: color-change 5s steps(1) 1,
+             diagonal-move-anim 5s ease 1;
+}
+.e {
+  animation: color-change 5s 1s steps(1) 1,
+             diagonal-move-anim 5s 1s ease 1;
+}
+.l1 {
+  animation: color-change 5s 2s steps(1) 1,
+             diagonal-move-anim 5s 2s ease 1;
+}
+.l2 {
+  animation: color-change 5s 3s steps(1) 1,
+             diagonal-move-anim 5s 3s ease 1;
+}
+.o {
+  animation: color-change 5s 4s steps(1) 1,
+             diagonal-move-anim 5s 4s ease 1;
+}
+
+@keyframes diagonal-move-anim {
+  0% {
+    transform: translate(0, 0) rotate(90deg);
+  }
+  25% {
+    transform: translate(150px, 250px) rotate(-180deg);
+  }
+  50% {
+    transform: translate(100px, -300px) rotate(45deg);
+  }
+  75% {
+    transform: translate(-250px, -175px) rotate(-90deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: yellow;
+  }
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 10rem;
+  font-family: "Fira Sans", sans-serif;
+  color: #DCF2B0;
+  text-shadow: 3px 3px 0px #59C3C3;
+}
+
+body {
+  background-color: #433F55;
+  margin:0;
+}
